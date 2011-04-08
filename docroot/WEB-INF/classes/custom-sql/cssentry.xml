@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<custom-sql>
+	<sql id="com.liferay.portlet.service.persistence.CSSEntryFinder.removeByPrimaryKeys">
+		<![CDATA[
+			
+			DELETE 
+				CE.*
+			FROM 
+				CSS_CSSEntry CE
+			WHERE	
+				cssEntryId IN ?
+		]]>
+	</sql>
+</custom-sql>

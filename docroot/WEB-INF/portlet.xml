@@ -8,7 +8,7 @@
 >
 	<portlet>
 		<portlet-name>1</portlet-name>
-		<display-name>CSS</display-name>
+		<display-name>Manage CSS</display-name>
 		<portlet-class>com.liferay.portlet.css.ManageCSSPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
@@ -19,9 +19,9 @@
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>CSS</title>
-			<short-title>CSS</short-title>
-			<keywords>CSS</keywords>
+			<title>Manage CSS</title>
+			<short-title>Manage CSS</short-title>
+			<keywords>Manage CSS</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
@@ -39,7 +39,7 @@
 	<portlet>
 		<portlet-name>2</portlet-name>
 		<display-name>Load CSS</display-name>
-		<portlet-class>com.liferay.portlet.css.CSSPortlet</portlet-class>
+		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
 			<value>/css.jsp</value>

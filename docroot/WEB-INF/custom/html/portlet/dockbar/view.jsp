@@ -141,6 +141,22 @@ for (String portletId : PropsValues.DOCKBAR_ADD_PORTLETS) {
 										<liferay-ui:message key="css" />
 									</a>
 								</li>
+								
+								<li class="javascript">
+									<%
+									PortletURL jsSettingsURL = new PortletURLImpl(
+										request, "1_WAR_jsportlet", plid,
+										PortletRequest.RENDER_PHASE);
+
+									jsSettingsURL.setWindowState(WindowState.MAXIMIZED);
+									jsSettingsURL.setPortletMode(PortletMode.VIEW);
+									jsSettingsURL.setParameter("returnToFullPageURL", PortalUtil.getLayoutURL(layout, themeDisplay));
+									
+									%>
+									<a href="<%= jsSettingsURL.toString() %>" style="background-image:url('<%= themeDisplay.getPathThemeImages() %>/aui/source.png');">
+										<liferay-ui:message key="javascript" />
+									</a>
+								</li>
 							</c:if>
 
 

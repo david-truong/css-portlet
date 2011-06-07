@@ -15,11 +15,8 @@
 	</portlet>
 	<portlet>
 		<portlet-name>2</portlet-name>
-		<icon>/icon.png</icon>
-		<friendly-url-mapper-class>com.liferay.portal.kernel.portlet.DefaultFriendlyURLMapper</friendly-url-mapper-class>
-		<friendly-url-mapping>css</friendly-url-mapping>
-		<friendly-url-routes>com/liferay/portlet/css/css-friendly-url-routes.xml</friendly-url-routes>
 		<use-default-template>false</use-default-template>
+		<add-default-resource>true</add-default-resource>
 		<system>true</system>
 	</portlet>
 	<role-mapper>

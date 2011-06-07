@@ -7,21 +7,26 @@ String tabs3 = ParamUtil.getString(request, "tabs3", "edit");
 
 PortletURL portletURL = renderResponse.createRenderURL();
 
-String tabNames = "page,site,global";
+String tabNames = "page,site"; 
 
 boolean isControlPanel = layout.getGroup().isControlPanel();
 Group scopeGroup = themeDisplay.getScopeGroup();
 
 if (isControlPanel) {
-	tabNames = "site,global";
+	tabNames.replace("page,","");
 	if (tabs1.equals("page")) {
 		tabs1 = "site";
 	}
 }
+
+if (permissionChecker.isOmniadmin()) {
+	tabNames+=",global";
+}
+
 %>
 
 <liferay-ui:tabs
-	names="<%= tabNames %>"
+	names='<%= tabNames.toString() %>'
 	param="tabs1"
 	value="<%= tabs1 %>"
 	url='<%= portletURL.toString() %>'

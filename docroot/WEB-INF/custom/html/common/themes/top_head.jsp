@@ -301,7 +301,6 @@ StringBundler pageTopSB = (StringBundler)request.getAttribute(WebKeys.PAGE_TOP);
 </c:if>
 
 <%-- CSS Portlet --%>
-
 <liferay-portlet:runtime portletName="2_WAR_cssportlet" />
 
 <%!

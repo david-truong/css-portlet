@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
 
-<service-builder package-path="com.liferay.portlet.css">
-	<namespace>CSS</namespace>
+	<service-builder package-path="com.liferay.portlet.css">
+		<namespace>CSS</namespace>
 	<entity name="CSSEntry" local-service="true" remote-service="true" uuid="true" >
 
 		<!-- PK fields -->
